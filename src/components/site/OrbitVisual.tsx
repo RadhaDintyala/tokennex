@@ -25,12 +25,12 @@ function OrbitNode({ node }: { node: Node }) {
   const Icon = node.icon;
   return (
     <motion.div
-      className="absolute left-1/2 top-1/2 h-0 w-0"
+      className="absolute inset-0"
       initial={{ rotate: node.angle }}
       animate={{ rotate: node.angle + 360 }}
       transition={{ duration: node.duration, repeat: Infinity, ease: "linear" }}
     >
-      <div style={{ transform: `translateX(${node.radius}%)` }}>
+      <div className="absolute top-1/2" style={{ left: `${50 + node.radius}%` }}>
         <motion.div
           animate={{ rotate: -360 }}
           transition={{ duration: node.duration, repeat: Infinity, ease: "linear" }}
