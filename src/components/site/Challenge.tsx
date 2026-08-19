@@ -33,7 +33,7 @@ function Flow({ steps, accent }: { steps: string[]; accent: boolean }) {
             style={
               accent
                 ? { boxShadow: "0 0 34px -10px var(--violet)", borderColor: "rgba(255,255,255,.2)" }
-                : undefined
+                : {}
             }
           >
             <span className={accent ? "text-foreground" : "text-foreground/60"}>{s}</span>
