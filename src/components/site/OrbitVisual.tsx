@@ -76,10 +76,10 @@ export function OrbitVisual() {
           return (
             <line
               key={a}
-              x1={200 + Math.cos(r) * 60}
-              y1={200 + Math.sin(r) * 60}
-              x2={200 + Math.cos(r) * 178}
-              y2={200 + Math.sin(r) * 178}
+              x1={+(200 + Math.cos(r) * 60).toFixed(2)}
+              y1={+(200 + Math.sin(r) * 60).toFixed(2)}
+              x2={+(200 + Math.cos(r) * 178).toFixed(2)}
+              y2={+(200 + Math.sin(r) * 178).toFixed(2)}
               stroke="var(--violet-soft)"
               strokeOpacity="0.14"
             />

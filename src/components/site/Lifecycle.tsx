@@ -66,10 +66,10 @@ export function Lifecycle() {
               return (
                 <line
                   key={i}
-                  x1={200 + Math.cos(a) * 70}
-                  y1={200 + Math.sin(a) * 70}
-                  x2={200 + Math.cos(a) * 150}
-                  y2={200 + Math.sin(a) * 150}
+                  x1={+(200 + Math.cos(a) * 70).toFixed(2)}
+                  y1={+(200 + Math.sin(a) * 70).toFixed(2)}
+                  x2={+(200 + Math.cos(a) * 150).toFixed(2)}
+                  y2={+(200 + Math.sin(a) * 150).toFixed(2)}
                   stroke={i === active ? "var(--violet-soft)" : "white"}
                   strokeOpacity={i === active ? 0.8 : 0.08}
                 />
@@ -89,8 +89,8 @@ export function Lifecycle() {
                 transition={{ duration: 0.35 }}
                 className="absolute w-28 -translate-x-1/2 -translate-y-1/2 rounded-2xl px-3 py-3 text-center glass"
                 style={{
-                  left: `${50 + Math.cos(rad) * R}%`,
-                  top: `${50 + Math.sin(rad) * R}%`,
+                  left: `${(50 + Math.cos(rad) * R).toFixed(2)}%`,
+                  top: `${(50 + Math.sin(rad) * R).toFixed(2)}%`,
                   boxShadow: i === active ? "0 0 40px -8px var(--violet)" : "none",
                 }}
               >
