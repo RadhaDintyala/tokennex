@@ -7,7 +7,7 @@ import { Team } from "@/components/site/Team";
 import { Connect } from "@/components/site/Connect";
 import { Footer } from "@/components/site/Footer";
 
-const title = "TokenNex — The semantic context layer for production AI";
+const title = "TokenNex";
 const description =
   "TokenNex understands, optimizes, and preserves the context your AI needs before every request reaches the model. More intelligence per token.";
 
