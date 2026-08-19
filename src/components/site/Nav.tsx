@@ -6,7 +6,6 @@ const links = [
   { label: "Services", href: "#challenge" },
   { label: "Our Team", href: "#team" },
   { label: "Solutions", href: "#lifecycle" },
-  { label: "Contact Us", href: "#connect" },
 ];
 
 export function Nav() {
@@ -37,9 +36,6 @@ export function Nav() {
         </div>
 
         <div className="hidden items-center gap-5 md:flex">
-          <a href="#connect" className="text-sm text-foreground/80 hover:text-foreground">
-            Log In
-          </a>
           <a
             href="#connect"
             className="rounded-full bg-background/70 px-5 py-2.5 text-sm font-medium text-foreground glow-ring transition-transform hover:scale-[1.04]"
@@ -70,7 +66,11 @@ export function Nav() {
                 {l.label}
               </a>
             ))}
-            <a href="#connect" onClick={() => setOpen(false)} className="text-sm text-foreground/80">
+            <a
+              href="#connect"
+              onClick={() => setOpen(false)}
+              className="text-sm text-foreground/80"
+            >
               Log In
             </a>
           </div>

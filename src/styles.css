@@ -127,5 +127,9 @@
 }
 
 @utility glow-violet {
-  background: radial-gradient(60% 55% at var(--gx, 50%) var(--gy, 0%), oklch(0.6 0.2 300 / 0.3), transparent 70%);
+  background: radial-gradient(
+    60% 55% at var(--gx, 50%) var(--gy, 0%),
+    oklch(0.6 0.2 300 / 0.3),
+    transparent 70%
+  );
 }

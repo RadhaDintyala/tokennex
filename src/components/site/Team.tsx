@@ -1,32 +1,6 @@
 import { motion } from "motion/react";
 import { Linkedin } from "lucide-react";
-
-export const TEAM = [
-  {
-    name: "V. Hima Sri Chandra",
-    role: "Chief Product Officer",
-    blurb: "Shapes how TokenNex turns semantic depth into a product people can build on.",
-    linkedin: "https://www.linkedin.com/",
-    gradient: "linear-gradient(135deg, var(--violet), var(--pink))",
-    initials: "HC",
-  },
-  {
-    name: "D. Radha Kalyani",
-    role: "Chief Technical Officer",
-    blurb: "Builds the retrieval, compression, and optimization core of the context engine.",
-    linkedin: "https://www.linkedin.com/",
-    gradient: "linear-gradient(135deg, var(--cyan), var(--violet))",
-    initials: "RK",
-  },
-  {
-    name: "B. Vyshnavi",
-    role: "Chief Marketing Officer",
-    blurb: "Tells the story of context — clearly, precisely, and without the noise.",
-    linkedin: "https://www.linkedin.com/",
-    gradient: "linear-gradient(135deg, var(--amber), var(--pink))",
-    initials: "BV",
-  },
-];
+import { TEAM } from "./team-data";
 
 export function Team() {
   return (
@@ -58,7 +32,11 @@ export function Team() {
               <p className="mt-1 text-sm text-violet-soft">{m.role}</p>
               <p className="mt-4 text-sm text-foreground/60">{m.blurb}</p>
               <a
-                href={m.linkedin}
+                href={
+                  m.name === "D. Radha Kalyani"
+                    ? "https://www.linkedin.com/in/radha-kalyani-3b63a031b/"
+                    : undefined
+                }
                 target="_blank"
                 rel="noreferrer"
                 aria-label={`${m.name} on LinkedIn`}

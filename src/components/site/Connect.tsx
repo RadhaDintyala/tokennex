@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { ArrowUpRight, Github } from "lucide-react";
-import { TEAM } from "./Team";
+import { ArrowUpRight } from "lucide-react";
+import { TEAM } from "./team-data";
 
 export function Connect() {
   return (
@@ -19,34 +19,6 @@ export function Connect() {
         <p className="mx-auto mt-6 max-w-lg text-foreground/65">
           Connect with the TokenNex team and follow our journey.
         </p>
-
-        <div className="mt-14 grid gap-4 sm:grid-cols-3">
-          {TEAM.map((m) => (
-            <motion.a
-              key={m.name}
-              href={m.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ y: -6 }}
-              className="rounded-2xl p-6 text-left glass"
-            >
-              <p className="font-display text-sm font-semibold">{m.name}</p>
-              <p className="mt-1 text-xs text-foreground/55">{m.role}</p>
-              <span className="mt-5 inline-flex items-center gap-1 text-xs text-violet-soft">
-                LinkedIn <ArrowUpRight size={13} />
-              </span>
-            </motion.a>
-          ))}
-        </div>
-
-        <a
-          href="https://github.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="mt-10 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm text-foreground/75 glass transition-colors hover:text-foreground"
-        >
-          <Github size={15} /> Follow the build
-        </a>
       </div>
     </section>
   );

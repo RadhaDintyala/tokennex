@@ -2,7 +2,11 @@ import { useState } from "react";
 import { motion } from "motion/react";
 
 const STEPS = [
-  { n: "01", title: "Ingest", body: "Collect raw information from apps, documents, and interactions." },
+  {
+    n: "01",
+    title: "Ingest",
+    body: "Collect raw information from apps, documents, and interactions.",
+  },
   {
     n: "02",
     title: "Understand",
@@ -11,9 +15,17 @@ const STEPS = [
   { n: "03", title: "Rank", body: "Score every fragment by relevance to the current request." },
   { n: "04", title: "Retrieve", body: "Pull only the context that actually changes the answer." },
   { n: "05", title: "Compress", body: "Reduce verbosity while preserving semantic fidelity." },
-  { n: "06", title: "Optimize", body: "Shape the final context window for maximum intelligence per token." },
+  {
+    n: "06",
+    title: "Optimize",
+    body: "Shape the final context window for maximum intelligence per token.",
+  },
   { n: "07", title: "Deliver", body: "Hand a clean, minimal, high-signal context to the model." },
-  { n: "08", title: "Preserve", body: "Retain what matters as durable memory for the next request." },
+  {
+    n: "08",
+    title: "Preserve",
+    body: "Retain what matters as durable memory for the next request.",
+  },
 ];
 
 const PIPELINE = [

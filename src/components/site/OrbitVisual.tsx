@@ -1,5 +1,14 @@
 import { motion } from "motion/react";
-import { Mail, MessageSquare, Database, FileText, Sparkles, Cpu, Layers, Globe } from "lucide-react";
+import {
+  Mail,
+  MessageSquare,
+  Database,
+  FileText,
+  Sparkles,
+  Cpu,
+  Layers,
+  Globe,
+} from "lucide-react";
 
 type Node = {
   label: string;
@@ -13,11 +22,25 @@ type Node = {
 const NODES: Node[] = [
   { label: "Google", icon: Globe, radius: 46, angle: -70, duration: 60, tint: "var(--cyan)" },
   { label: "Gmail", icon: Mail, radius: 46, angle: -20, duration: 60, tint: "var(--pink)" },
-  { label: "Slack", icon: MessageSquare, radius: 46, angle: 190, duration: 60, tint: "var(--violet-soft)" },
+  {
+    label: "Slack",
+    icon: MessageSquare,
+    radius: 46,
+    angle: 190,
+    duration: 60,
+    tint: "var(--violet-soft)",
+  },
   { label: "Discord", icon: Sparkles, radius: 46, angle: 120, duration: 60, tint: "var(--violet)" },
   { label: "AI", icon: Cpu, radius: 34, angle: 20, duration: 44, tint: "var(--cyan)" },
   { label: "Docs", icon: FileText, radius: 34, angle: 150, duration: 44, tint: "var(--pink)" },
-  { label: "Database", icon: Database, radius: 34, angle: 265, duration: 44, tint: "var(--violet-soft)" },
+  {
+    label: "Database",
+    icon: Database,
+    radius: 34,
+    angle: 265,
+    duration: 44,
+    tint: "var(--violet-soft)",
+  },
   { label: "Apps", icon: Layers, radius: 34, angle: 60, duration: 44, tint: "var(--violet)" },
 ];
 
