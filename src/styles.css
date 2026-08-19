@@ -121,19 +121,20 @@
 @utility ambient {
   background:
     radial-gradient(
-      70% 55% at 8% 2%,
-      color-mix(in oklab, var(--amber) 40%, transparent),
-      transparent 60%
+      55% 45% at 2% -5%,
+      color-mix(in oklab, var(--amber) 65%, transparent),
+      transparent 62%
     ),
     radial-gradient(
-      70% 60% at 45% 15%,
-      color-mix(in oklab, var(--violet) 55%, transparent),
-      transparent 65%
+      85% 75% at 42% 8%,
+      color-mix(in oklab, var(--violet) 78%, transparent),
+      transparent 68%
     ),
     radial-gradient(
-      60% 60% at 85% 45%,
-      color-mix(in oklab, var(--pink) 22%, transparent),
-      transparent 70%
+      70% 65% at 88% 40%,
+      color-mix(in oklab, var(--pink) 30%, transparent),
+      transparent 72%
     ),
-    radial-gradient(90% 90% at 60% 100%, oklch(0.13 0.05 275), transparent 70%);
+    radial-gradient(100% 85% at 55% 105%, oklch(0.14 0.05 275), transparent 72%),
+    linear-gradient(180deg, oklch(0.2 0.06 285), oklch(0.15 0.045 280));
 }
