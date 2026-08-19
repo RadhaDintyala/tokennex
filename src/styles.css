@@ -120,21 +120,13 @@
 
 @utility ambient {
   background:
-    radial-gradient(
-      55% 45% at 2% -5%,
-      color-mix(in oklab, var(--amber) 65%, transparent),
-      transparent 62%
-    ),
-    radial-gradient(
-      85% 75% at 42% 8%,
-      color-mix(in oklab, var(--violet) 78%, transparent),
-      transparent 68%
-    ),
-    radial-gradient(
-      70% 65% at 88% 40%,
-      color-mix(in oklab, var(--pink) 30%, transparent),
-      transparent 72%
-    ),
-    radial-gradient(100% 85% at 55% 105%, oklch(0.14 0.05 275), transparent 72%),
-    linear-gradient(180deg, oklch(0.2 0.06 285), oklch(0.15 0.045 280));
+    radial-gradient(55% 45% at 2% -5%, oklch(0.85 0.11 80 / 0.55), transparent 60%),
+    radial-gradient(85% 78% at 40% 6%, oklch(0.6 0.2 300 / 0.85), transparent 68%),
+    radial-gradient(70% 65% at 90% 42%, oklch(0.7 0.16 350 / 0.28), transparent 72%),
+    radial-gradient(95% 80% at 55% 108%, oklch(0.13 0.05 275 / 0.95), transparent 72%),
+    linear-gradient(180deg, oklch(0.21 0.06 288), oklch(0.15 0.045 282));
+}
+
+@utility glow-violet {
+  background: radial-gradient(60% 55% at var(--gx, 50%) var(--gy, 0%), oklch(0.6 0.2 300 / 0.3), transparent 70%);
 }
