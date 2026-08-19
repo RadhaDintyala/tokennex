@@ -5,7 +5,7 @@ import { OrbitVisual } from "./OrbitVisual";
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden ambient">
-      <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_120%,transparent,oklch(0.14_0.04_280)_75%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,oklch(0.16_0.045_285)_100%)]" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pt-36 pb-24 lg:grid-cols-2 lg:gap-8 lg:px-10 lg:pt-44 lg:pb-32">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
