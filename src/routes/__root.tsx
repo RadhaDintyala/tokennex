@@ -77,11 +77,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "TokenNex — The semantic context layer for production AI" },
+      {
+        name: "description",
+        content:
+          "TokenNex understands, optimizes, and preserves the context your AI needs before every request reaches the model.",
+      },
+      { name: "author", content: "TokenNex" },
+      { property: "og:title", content: "TokenNex" },
+      { property: "og:description", content: "More intelligence per token." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
