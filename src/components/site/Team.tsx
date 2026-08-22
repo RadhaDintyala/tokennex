@@ -33,11 +33,13 @@ export function Team() {
               <p className="mt-4 text-sm text-foreground/60">{m.blurb}</p>
               <a
                 href={
-                  m.name === "D. Radha Kalyani"
-                    ? "https://www.linkedin.com/in/radha-kalyani-3b63a031b/"
-                    : m.name === "B. Vyshnavi"
-                      ? "https://www.linkedin.com/in/bheemanaboina-vyshnavi-566822329?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                      : undefined
+                  m.name === "V. Hima Sri Chandra"
+                    ? "https://www.linkedin.com/in/hima-sri-vasa-54874442b"
+                    : m.name === "D. Radha Kalyani"
+                      ? "https://www.linkedin.com/in/radha-kalyani-3b63a031b/"
+                      : m.name === "B. Vyshnavi"
+                        ? "https://www.linkedin.com/in/bheemanaboina-vyshnavi-566822329?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        : undefined
                 }
                 target="_blank"
                 rel="noreferrer"
