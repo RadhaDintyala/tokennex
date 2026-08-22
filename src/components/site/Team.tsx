@@ -35,7 +35,9 @@ export function Team() {
                 href={
                   m.name === "D. Radha Kalyani"
                     ? "https://www.linkedin.com/in/radha-kalyani-3b63a031b/"
-                    : undefined
+                    : m.name === "B. Vyshnavi"
+                      ? "https://www.linkedin.com/in/bheemanaboina-vyshnavi-566822329?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                      : undefined
                 }
                 target="_blank"
                 rel="noreferrer"
